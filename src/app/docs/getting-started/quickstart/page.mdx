@@ -1,0 +1,46 @@
+---
+description:
+  Getting started with rusticx. Adding rusticx to your rust project
+---
+
+import { Tabs, Steps } from 'nextra/components'
+
+# Quick Start
+
+Add Rusticx to your rust project.
+
+Rusticx supports multiple databases like:
+- PostgreSQL
+- SQLite
+- MySQL
+
+## Installation
+
+Add rusticx in your Cargo.toml file
+
+### Using cargo cli
+<Tabs items={['cargo']} defaultIndex={1}>
+  <Tabs.Tab>
+  ```rust
+  cargo add rusticx rusticx_derive --features rusticx/postgres
+  ```
+  </Tabs.Tab>
+</Tabs>
+
+### Manual Installation
+
+Add this line in Cargo.toml
+
+```toml
+rusticx = { version = '0.1.3', features = ['postgres']}
+rusticx_derive = { version = '0.1.2' }
+
+// check rusticx crate in https://crates.io/ for the latest version
+```
+
+Rusticx also needs ```serde``` crate to serialize and deserialize the struct.
+So it's a good idea to add serde in your project if you haven't.
+
+
+
+And thats it your done! 🎉 Rusticx is added in your project.

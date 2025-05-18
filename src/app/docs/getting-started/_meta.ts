@@ -1,7 +1,22 @@
+import type { MetaRecord } from 'nextra'
 
-export default {
+const meta: MetaRecord = {
   index: {
     type: 'page',
-    display: 'hidden'
+    display: 'hidden',
   },
+  quickstart:{
+    type: "doc",
+    title: "Quick Start",
+  },
+  usage:{
+    type: "doc",
+    title: "Usage",
+  },
+  example:{
+    type:"doc",
+    title:"Example",
+  }
 }
+
+export default meta

@@ -64,7 +64,7 @@ export default async function RootLayout({ children }:Readonly<{children:React.R
           pageMap={await getPageMap()}
           editLink="Edit this page on GitHub"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
-          docsRepositoryBase="https://github.com/TarunVishwakarma1/rustix-orm"
+          docsRepositoryBase="https://github.com/TarunVishwakarma1/rusticx-docs/blob/main"
           footer={<PageFooter/>}
         >
           {children}

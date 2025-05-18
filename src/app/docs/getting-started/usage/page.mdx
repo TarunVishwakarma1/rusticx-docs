@@ -1,0 +1,67 @@
+import { Steps } from 'nextra/components';
+
+# Usage
+
+After you have added rusticx in your rust project. Its now time to use the library.
+
+## Example
+
+<Steps>
+
+#### main.rs
+In your main.rs create a struct
+
+```rust filename="main.rs"
+
+struct Users{
+    id: Option<i32>, // an Option<i32> field is required
+    name: String,
+    email: String,
+    //add more fields as required
+}
+```
+
+#### Add dependencies for Rusticx
+
+```rust filename="main.rs"
+use rusticx_derive::Model;
+use chrono::NaiveDateTime;
+use uuid::Uuid
+
+#[derive(Debug, Serialize, Deserialize, Model)]
+struct Users{
+    id: Option<i32>, // an Option<i32> field is required
+    name: String,
+    email: String,
+    created_at: NaiveDateTime,
+    uuid: Uuid
+    //add more fields as required
+}
+```
+
+#### Configure the struct
+
+```rust filename="main.rs"
+use rusticx_derive::Model;
+use chrono::NaiveDateTime;
+use uuid::Uuid
+
+#[derive(Debug, Serialize, Deserialize, Model)]
+#[model(table = "employee")] // this will create the table as employee.
+struct Users{
+    #[model(primary_key,auto_increment)] // this will make the id field in the database as primary key which will auto increment REQUIRED
+    id: Option<i32>, // an Option<i32> field is REQUIRED
+    #[model(column = "full_name")]  // you can rename your fields in the database by using this
+    #[serde(rename = "full_name")]
+    name: String,
+    email: String,
+    created_at: NaiveDateTime, 
+    #[model(uuid)] // this can generate an auto generated uuid in your table
+    uuid: Uuid
+    //add more fields as required
+}
+```
+
+And that's it, you have now configured your struct to use the rusticx_derive macro model. 
+
+</Steps>
