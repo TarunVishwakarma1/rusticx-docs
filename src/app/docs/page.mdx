@@ -1,0 +1,30 @@
+# Introduction
+ 
+Welcome to Rusticx documentation!
+
+## What is Rusticx?
+
+Rusticx is a powerful Object-Relational Mapping (ORM) library written in Rust for Rust developers, designed to simplify database interactions and eliminate boilerplate code. With Rusticx, you can focus on building your application logic while the ORM handles the database operations seamlessly.
+
+Rusticx underlaying technology uses the cargo crates which are used to make a connection with the database, Rusticx just makes your job easy to connect to those database. 
+
+Rusticx supports multiple databases like Postgres(Tested), SQLite, MYSQL. 
+
+### Overview
+
+Rusticx streamlines CRUD (Create, Read, Update, Delete) operations with an intuitive API that reduces development time and improves code maintainability. Instead of writing complex database setup and connection code, you can install Rusticx and start working with your data models immediately.
+
+### Supported databases
+
+Supported Databases
+Rusticx leverages existing Rust crates for database connectivity while providing a consistent, easy-to-use interface across different database systems:
+
+- PostgreSQL (Fully tested and production-ready)
+- SQLite
+- MySQL
+
+Under the hood, Rusticx utilizes established database driver crates to ensure reliable connections, while abstracting away the complexity typically associated with database operations in Rust applications.
+
+## Rusticx Derive
+
+Rusticx Derive is a custom derived macro that provides model functions for a struct to perform crud actions in the database.
