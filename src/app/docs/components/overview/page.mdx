@@ -1,0 +1,46 @@
+import { Cards } from 'nextra/components';
+import Image from 'next/image'
+import { HardDriveDownload, DatabaseBackup, TextSearch, Trash2, SquareSigma, CircleX, FileBox } from 'lucide-react'
+
+
+# Overview
+
+Rusticx provides many easy to use CRUD functions and components which can reduce the boiler plate for fast development. 
+
+<Cards>
+    <Cards.Card
+        title="Insert Functions"
+        icon={<HardDriveDownload/>}
+        href="/docs/components/insert"
+    />
+    <Cards.Card
+        icon={<DatabaseBackup/>}
+        title="Update Functions"
+        href="/docs/components/update"
+    />
+    <Cards.Card
+        icon={<TextSearch/>}
+        title="Select Functions"
+        href="/docs/components/select"
+    />
+    <Cards.Card
+        title="Delete Functions"
+        icon={<Trash2/>}
+        href="/docs/components/delete"
+    />
+    <Cards.Card
+        icon={<SquareSigma/>}
+        title="Enums"
+        href="/docs/components/enums"
+    />
+    <Cards.Card
+        icon={<CircleX/>}
+        title="Errors"
+        href="/docs/components/errors"
+    />
+    <Cards.Card
+        icon={<FileBox/>}
+        title="Model"
+        href="/docs/components/model"
+    />
+</Cards>
