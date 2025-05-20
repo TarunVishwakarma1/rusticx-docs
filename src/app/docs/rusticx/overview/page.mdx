@@ -1,6 +1,6 @@
 import { Cards } from 'nextra/components';
 import Image from 'next/image'
-import { HardDriveDownload, DatabaseBackup, TextSearch, Trash2, SquareSigma, CircleX, FileBox, Grid2x2Plus } from 'lucide-react'
+import { HardDriveDownload, DatabaseBackup, TextSearch, Trash2, SquareSigma, CircleX, FileBox, Grid2x2Plus, Braces } from 'lucide-react'
 
 
 # Overview
@@ -11,41 +11,46 @@ Rusticx provides many easy to use CRUD functions and components which can reduce
     <Cards.Card
         title="Create Functions"
         icon={<Grid2x2Plus/>}
-        href="/docs/components/create"
+        href="/docs/rusticx/create"
     />
     <Cards.Card
         title="Insert Functions"
         icon={<HardDriveDownload/>}
-        href="/docs/components/insert"
+        href="/docs/rusticx/insert"
     />
     <Cards.Card
         icon={<DatabaseBackup/>}
         title="Update Functions"
-        href="/docs/components/update"
+        href="/docs/rusticx/update"
     />
     <Cards.Card
         icon={<TextSearch/>}
         title="Select Functions"
-        href="/docs/components/select"
+        href="/docs/rusticx/select"
     />
     <Cards.Card
         title="Delete Functions"
         icon={<Trash2/>}
-        href="/docs/components/delete"
+        href="/docs/rusticx/delete"
+    />
+    <Cards.Card
+        icon={<Braces/>}
+        title="Struct"
+        href="/docs/rusticx/struct"
     />
     <Cards.Card
         icon={<SquareSigma/>}
         title="Enums"
-        href="/docs/components/enums"
+        href="/docs/rusticx/enums"
     />
     <Cards.Card
         icon={<CircleX/>}
         title="Errors"
-        href="/docs/components/errors"
+        href="/docs/rusticx/errors"
     />
     <Cards.Card
         icon={<FileBox/>}
         title="Model"
-        href="/docs/components/model"
+        href="/docs/rusticx/model"
     />
 </Cards>

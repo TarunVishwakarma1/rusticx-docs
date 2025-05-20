@@ -3,7 +3,7 @@ description:
   Getting started with rusticx. Adding rusticx to your rust project
 ---
 
-import { Tabs, Steps } from 'nextra/components'
+import { Tabs, Steps, Callout } from 'nextra/components'
 
 # Quick Start
 
@@ -13,6 +13,8 @@ Rusticx supports multiple databases like:
 - PostgreSQL
 - SQLite
 - MySQL
+
+<Callout type='info'>Use postgres for now as it is fully tested.</Callout>
 
 ## Installation
 
@@ -34,9 +36,9 @@ Add this line in Cargo.toml
 ```toml filename="Cargo.toml"
 rusticx = { version = '0.1.3', features = ['postgres']}
 rusticx_derive = { version = '0.1.2' }
-
-// check rusticx crate in https://crates.io/ for the latest version
 ```
+
+<Callout type='info'>check rusticx crate in https://crates.io/ for the latest version.</Callout>
 
 Rusticx also needs ```serde``` crate to serialize and deserialize the struct.
 So it's a good idea to add serde in your project if you haven't.

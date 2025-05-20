@@ -9,23 +9,34 @@ const meta: MetaRecord = {
     type: 'doc',
     title: "Overview"
   },
+  '_1':{
+    title:'Functions',
+    type:'separator',
+  },
   create:{
-    title: "Create Functions",
+    title: "Create",
     type: 'doc',
   },
   insert:{
-    title: "Insert Function",
+    title: "Insert",
     type: 'doc',
   },
   update:{
-    title: 'Update Function',
+    title: 'Update',
     type: 'doc',
   },
   select:{
-    title: "Select Function"
+    title: "Select"
   },
   delete:{
-    title: "Delete Functions",
+    title: "Delete",
+  },
+  '_2':{
+    type: 'separator',
+    title: "Types",
+  },
+  struct:{
+    title: "Struct"
   },
   enums:{
     title: "Enums",

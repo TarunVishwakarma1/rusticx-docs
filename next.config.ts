@@ -17,7 +17,7 @@ export default withNextra({
             permanent: true,
         },
         {
-            source: '/docs/components',
+            source: '/docs/rusticx',
             destination: '/docs/getting-started/overview',
             permanent: true,
         },

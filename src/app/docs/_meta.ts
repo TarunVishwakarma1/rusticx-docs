@@ -12,8 +12,12 @@ const meta: MetaRecord =   {
     type:'separator',
     title:'Components',
     },
-    components: {
-        title:"Rusticx Components",
+    rusticx: {
+        title:"Rusticx",
+        type:"doc",
+    },
+    "rusticx-derive": {
+        title:"Rusticx Derive",
         type:"doc",
     }
 }
